@@ -113,9 +113,10 @@ see an image similar to the one below.
 1. Create a `rootReducer` to pass to the `configureStore` method
 2. Connect Redux to React
 
+[CodeSandbox]: https://codesandbox.io
 [combine-reducers]: https://redux.js.org/api/combinereducers
 [compose]: https://redux.js.org/api/compose
 [applymiddleware]: https://redux.js.org/api/applymiddleware
 [provider]: https://react-redux.js.org/api/provider
-[redux-store]: ./images/redux-devtools.png
+[redux-store]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/redux-devtools.png
 [store]: https://redux.js.org/api/store

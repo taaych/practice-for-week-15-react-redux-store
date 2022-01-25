@@ -33,7 +33,7 @@ if (process.env.NODE_ENV !== 'production') {
 // from the server. 
 // For `enhancer`, see above.
 // `configureStore` is the variable you will use in your root index.js to give
-// the Redux store access to the full application
+// the Redux store access to the full application.
 const configureStore = preloadedState => {
   return createStore(rootReducer, preloadedState, enhancer);
 };
