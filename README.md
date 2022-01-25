@@ -51,9 +51,9 @@ these two tools were composed using a method from `Redux` called
 If you are successful, your `rootReducer` should look like this:
 
 ```js
-  const rootReducer = combineReducers({
-    fruitState: fruitReducer,
-  });
+const rootReducer = combineReducers({
+  fruitState: fruitReducer,
+});
 ```
 
 ## Connect Redux to React
@@ -77,26 +77,26 @@ of invoking `configureStore` (which you saved as `store` above).
 If you are successful, your code should look like this:
 
 ```js
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import { Provider } from 'react-redux';
-  import { BrowserRouter } from 'react-router-dom';
-  import App from './App';
-  import configureStore from './store';
-  import './index.css';
-  
-  const store = configureStore();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import configureStore from './store';
+import './index.css';
 
-  ReactDOM.render(
-    <React.StrictMode>
-      <Provider store={store}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </Provider>
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+const store = configureStore();
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 ```
 
 To see that your store has successfully been connected, click the `Open In New
