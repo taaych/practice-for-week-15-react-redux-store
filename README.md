@@ -10,10 +10,13 @@ Over the next series of short practices, you are going to learn how to
 In this short practice, you will finish creating a Redux store and connect it to
 React.
 
-## Setup
+## Set up
 
-Click the `Download Project` button at the bottom of this page to go to the
-starter repo, then load the repo into [CodeSandbox].
+Clone the starter repo accessible from the `Download Project` button at the
+bottom of this page and `cd` into the root directory.
+
+1. Run `npm install` to load all the dependencies.
+2. Run `npm start` to start the server and run your app `localhost:3000`.
 
 ## Create Root Reducer
 
@@ -52,7 +55,7 @@ If you are successful, your `rootReducer` should look like this:
 
 ```js
 const rootReducer = combineReducers({
-  fruitState: fruitReducer,
+  fruitState: fruitReducer
 });
 ```
 
@@ -99,10 +102,9 @@ ReactDOM.render(
 );
 ```
 
-To see that your store has successfully been connected, click the `Open In New
-Window` button in the upper right of your sandbox browser. In the new window,
-open your DevTools and choose the `Redux` tab. If you are successful, you should
-see an image similar to the one below.
+To check that your store has been successfully connected, go to your browser,
+open the DevTools, and select the `Redux` tab. If everything is correct, you
+should see an image similar to the one below.
 
 ![redux-store][redux-store]
 
@@ -113,7 +115,6 @@ see an image similar to the one below.
 1. Create a `rootReducer` to pass to the `configureStore` method
 2. Connect Redux to React
 
-[CodeSandbox]: https://codesandbox.io
 [combine-reducers]: https://redux.js.org/api/combinereducers
 [compose]: https://redux.js.org/api/compose
 [applymiddleware]: https://redux.js.org/api/applymiddleware
