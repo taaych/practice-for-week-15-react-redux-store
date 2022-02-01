@@ -10,7 +10,7 @@ Over the next series of short practices, you are going to learn how to
 In this short practice, you will finish creating a Redux store and connect it to
 React.
 
-## Set up
+## Setup
 
 Clone the starter repo accessible from the `Download Project` button at the
 bottom of this page and `cd` into the root directory.
