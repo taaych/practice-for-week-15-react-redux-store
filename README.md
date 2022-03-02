@@ -12,11 +12,14 @@ React.
 
 ## Setup
 
-Clone the starter repo accessible from the `Download Project` button at the
-bottom of this page and `cd` into the root directory.
+Click the `Download Project` button at the bottom of this page to go to the
+starter repo, then load the repo into [CodeSandbox].
 
-1. Run `npm install` to load all the dependencies.
-2. Run `npm start` to start the server and run your app `localhost:3000`.
+You should also add the Redux DevTools to your browser extensions if you have
+not done so already. To add the extension in Chrome, go
+[here][add-ReduxDevTools]. For other browsers, search in your extension/add-on
+menu for Redux DevTools and follow the instructions for adding it to your
+browser.
 
 ## Create Root Reducer
 
@@ -102,9 +105,10 @@ ReactDOM.render(
 );
 ```
 
-To check that your store has been successfully connected, go to your browser,
-open the DevTools, and select the `Redux` tab. If everything is correct, you
-should see an image similar to the one below.
+To check that your store has successfully been connected, click the `Open In New
+Window` button in the upper right of your sandbox browser. In the new window,
+open your DevTools and choose the `Redux` tab. If everything is correct, you
+should see an image similar to the one below:
 
 ![redux-store][redux-store]
 
@@ -115,6 +119,8 @@ should see an image similar to the one below.
 1. Create a `rootReducer` to pass to the `configureStore` method
 2. Connect Redux to React
 
+[CodeSandbox]: https://codesandbox.io
+[add-ReduxDevTools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
 [combine-reducers]: https://redux.js.org/api/combinereducers
 [compose]: https://redux.js.org/api/compose
 [applymiddleware]: https://redux.js.org/api/applymiddleware
